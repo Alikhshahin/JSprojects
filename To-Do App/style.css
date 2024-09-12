@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e9efec; /* Very Light Green */
+}
+
+.container {
+  text-align: center;
+  background: #c4dad2; /* Light Green */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #16423c; /* Dark Green */
+}
+
+#new-task {
+  padding: 10px;
+  border: 2px solid #6a9c89; /* Medium Green */
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+#add-task {
+  padding: 10px 15px;
+  background-color: #16423c; /* Dark Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-task:hover {
+  background-color: #6a9c89; /* Medium Green */
+}
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#task-list li {
+  background: #e9efec; /* Very Light Green */
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#task-list li.completed {
+  text-decoration: line-through;
+  color: #6a9c89; /* Medium Green */
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button.check {
+  background-color: #16423c; /* Dark Green */
+  color: white;
+}
+
+button.check:hover {
+  background-color: #6a9c89; /* Medium Green */
+}
+
+button.remove {
+  background-color: #6a9c89; /* Medium Green */
+  color: white;
+}
+
+button.remove:hover {
+  background-color: #16423c; /* Dark Green */
+}
+#task-list li {
+  background: #e9efec;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* This is necessary for button movement */
+}
+
+button.check {
+  background-color: #16423c;
+  color: white;
+  position: relative; /* To allow movement inside the li */
+  transition: all 0.2s ease-in-out;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #c4dad2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  color: #16423c;
+}
+
+#contact-btn {
+  background-color: #6a9c89;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#contact-btn:hover {
+  background-color: #16423c;
+}
